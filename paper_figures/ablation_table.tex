@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Ablation results on the FLAME2-DT validation set.}
+\label{tab:ablation}
+\begin{tabular}{lcccccc}
+\toprule
+Method & Input & Layers & $\lambda$ & Epochs & mAP50 & mAP50:95 \\
+\midrule
+RGB DCF-YOLO baseline & RGB & - & 0 & 100 & 0.4210 & 0.2010 \\
+RGB continued training & RGB & - & 0 & 100 & 0.4426 & 0.1945 \\
+KD all layers & RGB & P3+P4+P5 & 1.0 & 100 & 0.4358 & 0.1938 \\
+KD all layers & RGB & P3+P4+P5 & 0.1 & 100 & 0.4347 & 0.2008 \\
+KD P3 only & RGB & P3 & 0.1 & 30 & 0.4050 & 0.1745 \\
+KD P4 only & RGB & P4 & 0.1 & 30 & 0.3859 & 0.1707 \\
+KD P5 only & RGB & P5 & 0.1 & 30 & 0.3881 & 0.1703 \\
+KD P3 only & RGB & P3 & 0.1 & 100 & 0.4312 & 0.1910 \\
+IR DCF-YOLO teacher & IR & - & 0 & 100 & 0.7767 & 0.3982 \\
+\bottomrule
+\end{tabular}
+\end{table}

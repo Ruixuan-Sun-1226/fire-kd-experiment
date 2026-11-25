@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+runs/
+logs/
+weights/
+*.pt
+*.pth
+datasets/
+data/images/
+data/videos/
+.env
+.vscode/

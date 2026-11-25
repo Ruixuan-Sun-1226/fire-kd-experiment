@@ -1,0 +1,6 @@
+train: D:/fire_kd_experiment/datasets/FLAME2-DT/prepared/rgb_fire/images/train
+val: D:/fire_kd_experiment/datasets/FLAME2-DT/prepared/rgb_fire/images/val
+test: D:/fire_kd_experiment/datasets/FLAME2-DT/prepared/rgb_fire/images/val
+
+nc: 1
+names: ['fire']

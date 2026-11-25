@@ -1,0 +1,10 @@
+method,input,init,layers,lambda,epochs,mAP50,mAP50_95
+RGB DCF-YOLO baseline,RGB,Random,-,0,100,0.421,0.201
+RGB continued training,RGB,RGB baseline,-,0,100,0.442576,0.194507
+KD all layers,RGB,RGB baseline,P3+P4+P5,1.0,100,0.435761,0.193799
+KD all layers,RGB,RGB baseline,P3+P4+P5,0.1,100,0.43466,0.200831
+KD P3 only,RGB,RGB baseline,P3,0.1,30,0.404978,0.174518
+KD P4 only,RGB,RGB baseline,P4,0.1,30,0.385854,0.170737
+KD P5 only,RGB,RGB baseline,P5,0.1,30,0.388108,0.170286
+KD P3 only,RGB,RGB baseline,P3,0.1,100,0.431238,0.191015
+IR DCF-YOLO teacher,IR,Random,-,0,100,0.7767,0.3982
