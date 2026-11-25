@@ -11,3 +11,21 @@ data/images/
 data/videos/
 .env
 .vscode/
+# Python cache
+**/__pycache__/
+*.pyc
+
+# Local backup folders
+**/backups_before_*/
+# Python cache
+**/__pycache__/
+*.pyc
+
+# Dataset files
+**/firedataset/
+
+# Local backup folders
+**/backups_before_*/
+
+# Backups of nested Git metadata
+**/.git.upstream-backup/
